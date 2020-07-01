@@ -8,6 +8,11 @@ pipeline {
                   sh 'eksctl'
               }
          }
+         stage('Set up infra') {
+		steps {
+	       sh 'sh ./create-cluster.sh'
+             }
+        }
          }
      }
 
