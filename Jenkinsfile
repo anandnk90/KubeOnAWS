@@ -8,11 +8,16 @@ pipeline {
                   sh 'eksctl'
               }
          }
-         stage('Set up infra') {
-		steps {
-	       sh './create-cluster.sh'
-             }
-        }
+#         stage('Set up infra') {
+#		steps {
+#	       sh './create-cluster.sh'
+#            }
+#      }
+       stage('Deploy app') {
+          steps {
+         sh './.deploy-app-on-k8s.sh'
+       }
+}
          }
      }
 
