@@ -1,17 +1,13 @@
-#to run: ./upload_docker.sh <<dockerpath>> <<version number>> <<docker image>>
-
-# Step 1:miniku
-# Create dockerpath
-#dockerpath=anandnk90/udacitycapstone
-dockerpath=${1}
-version=${2}
-imageid=${3}
+# Step 1:
+# Set variables
+dockerpath=anandnk90/udacitycapstone
+imageid=docker images -q udacitycapstone/app
+version=v1
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-echo "Logging in using password file"
-cat dockerpasswd.txt | docker login --username anandnk90 --password-stdin
+cat $DOCKERPASSWD | docker login --username anandnk90 --password-stdin
 docker tag $imageid $dockerpath:$version
 
 # Step 3:
