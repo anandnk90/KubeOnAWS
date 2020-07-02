@@ -17,7 +17,7 @@ pipeline {
                   sh './upload_docker.sh'
               }
          }
-         stage('Set up infra') {
+         /*stage('Set up infra') {
 		        steps {
 	              sh 'eksctl'
               }
@@ -26,7 +26,7 @@ pipeline {
                 steps {
                   sh './deploy-app-on-k8s.sh'
               }
-         }
+         }*/
     }
 }
 
