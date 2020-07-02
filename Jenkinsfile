@@ -1,3 +1,4 @@
+
 pipeline {
      agent any
      stages {
@@ -9,7 +10,7 @@ pipeline {
          }
          stage('Build docker image') {
               steps {
-                  sh 'docker build -t udacitycapstone/app .'
+                  sh 'sudo docker build -t udacitycapstone/app .'
               }
          }
          stage('Publish docker image') {
@@ -17,7 +18,7 @@ pipeline {
                   sh './upload_docker.sh'
               }
          }
-         /*stage('Set up infra') {
+/*         stage('Set up infra') {
 		        steps {
 	              sh 'eksctl'
               }
