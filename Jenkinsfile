@@ -10,7 +10,7 @@ pipeline {
          }
          stage('Build docker image') {
               steps {
-                  sh 'sudo docker build -t udacitycapstone/app .'
+                  sh 'docker build -t udacitycapstone/app .'
               }
          }
          stage('Publish docker image') {
