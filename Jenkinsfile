@@ -14,7 +14,7 @@ pipeline {
       }
        stage('Deploy app') {
           steps {
-         sh './.deploy-app-on-k8s.sh'
+         sh './deploy-app-on-k8s.sh'
        }
 }
          }
