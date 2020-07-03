@@ -11,7 +11,7 @@ pipeline {
          stage('Build docker image') {
               steps {
                   sh 'whoami'
-                  sh 'docker build -t udacitycapstone/app .'
+                  sh 'docker build -t anandnk90/udacitycapstone .'
               }
          }
          stage('Publish docker image') {

@@ -3,7 +3,7 @@
 ## Complete the following steps to get Docker running locally
 
 # Step 1:
-app="udacitycapstone/app"
+app="anandnk90/udacitycapstone"
 docker build -t ${app} .
 
 # Step 2: 
