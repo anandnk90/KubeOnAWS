@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: capstone
-        image: anandnk90/udacitycapstone:latest
+        image: anandnk90/udacitycapstone:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 80

@@ -4,4 +4,4 @@ echo $DOCKERPASSWD | docker login --username anandnk90 --password-stdin
 
 # Step 3:
 # Push image to a docker repository
-docker push anandnk90/udacitycapstone:latest
+docker push anandnk90/udacitycapstone:v1

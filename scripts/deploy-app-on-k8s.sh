@@ -2,7 +2,7 @@
 
 cluster_name=capstone-cluster
 cluster_data=$(eksctl get cluster | grep capstone-cluster)
-if [[ -z cluster_data ]]; then
+if [[ -z $cluster_data ]]; then
   echo "Cluster not created!"
   exit 1;
 fi
