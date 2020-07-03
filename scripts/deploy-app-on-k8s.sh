@@ -8,5 +8,5 @@ if [[ -z cluster_data ]]; then
 fi
 aws eks --region us-west-2 update-kubeconfig --name $cluster_name
 kubectl config set-context $cluster_name
-kubectl apply -f app/deployment.yml
+kubectl apply -f ./scripts/deployment.yml
 
