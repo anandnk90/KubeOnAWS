@@ -2,3 +2,4 @@
 *.code-workspace
 *.pem
 local-storage.json
+testcreate.sh
