@@ -10,6 +10,7 @@ pipeline {
          }
          stage('Build docker image') {
               steps {
+                  sh 'whoami'
                   sh 'docker build -t udacitycapstone/app .'
               }
          }
