@@ -8,7 +8,6 @@ app = Flask(__name__)
 def hello_world():
     """Function"""
     return 'Hello World! My name is Anand Nandakumar.'
-    sdzdv32
 
 if __name__ == "__main__":
     app.debug = True
