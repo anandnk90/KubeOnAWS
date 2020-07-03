@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build docker image') {
             steps {
-                sh 'cd app && docker build -t anandnk90/udacitycapstone:v1 .'
+                sh 'cd app && docker build -t anandnk90/udacitycapstone:latest .'
             }
         }
         stage('Publish docker image') {
