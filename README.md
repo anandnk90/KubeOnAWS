@@ -1,4 +1,4 @@
-# Deploying a hello world flask app on a Amazon EKS
+# Deploying a hello world flask app on Amazon EKS
 
 ## Summary
 The project uses a Jenkins pipeline to lint a simple flask app, build a docker image of the app, deploy the docker image and then deploy the app on a Kubernetes cluser on Amazon EKS. A rolling deployment strategy is used to deploy the app.
